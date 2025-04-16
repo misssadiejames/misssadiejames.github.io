@@ -1,0 +1,51 @@
+body {
+    background-color: rgb(16, 14, 14);
+}
+
+
+img {
+    width: 50%;
+}
+
+
+
+div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:-10px;
+}
+
+
+a {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a:hover {
+    color: #231f20;
+}
+
+
+
+/* Define the slow bounce animation */
+@keyframes slowBounce {
+    0%, 50% {
+      transform: translateY(0); /* Start and end at the normal position */
+    }
+    50% {
+      transform: translateY(-30px); /* Move up halfway */
+    }
+  }
+  
+  /* Apply the animation on hover */
+  .cocoon1 {
+    transition: transform 0.3s ease;
+  }
+  
+  .cocoon1:hover {
+    animation: slowBounce 2s ease-in-out infinite; /* 2 seconds for one cycle, infinitely repeating */
+  }
